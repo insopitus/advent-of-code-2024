@@ -1,8 +1,4 @@
-mod input{
-    pub const example:&str = "3";
 
-    pub const actual:&str = "";
-}
 
 fn parse(input:&str){
     
@@ -53,7 +49,7 @@ mod part_2{
         fn example(){
             let input = super::super::input::example;
             parse(input);
-            assert_eq!(31,31);
+            assert_eq!(solve(),31);
         }
         #[test]
         fn question(){
@@ -63,4 +59,10 @@ mod part_2{
             dbg!();
         }
     }
+}
+
+mod input{
+    pub const example:&str = "3";
+
+    pub const actual:&str = "";
 }
