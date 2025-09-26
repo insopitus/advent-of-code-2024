@@ -6,26 +6,21 @@ fn parse(input:&str){
 mod part_1{
 
 
-    fn solve()->i32{
+    fn solve(input:&str)->i32{
         0
     }
 
     #[cfg(test)]
     mod test{
-        use super::super::parse;
         use super::solve;
         #[test]
         fn example(){
             let input = super::super::input::example;
-            parse(input);
-            assert_eq!(11,11);
+            assert_eq!(solve(input),11);
         }
         #[test]
         fn question(){
-            
-            parse(super::super::input::actual);
-
-            dbg!();
+            dbg!(solve(super::super::input::actual));
         }
     }
 }
@@ -35,7 +30,7 @@ mod part_2{
 
 
 
-    fn solve()->i32{
+    fn solve(input:&str)->i32{
         
         0
 
@@ -43,20 +38,17 @@ mod part_2{
 
     #[cfg(test)]
     mod test{
-        use super::super::parse;
         use super::solve;
         #[test]
         fn example(){
             let input = super::super::input::example;
-            parse(input);
-            assert_eq!(solve(),31);
+            assert_eq!(solve(input),31);
         }
         #[test]
         fn question(){
             
-            parse(super::super::input::actual);
 
-            dbg!();
+            dbg!(solve(super::super::input::actual));
         }
     }
 }
